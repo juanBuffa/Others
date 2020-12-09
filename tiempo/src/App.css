@@ -1,0 +1,229 @@
+#main-div {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 6fr 4fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "header header header"
+    "actual horasSiguientes horasSiguientes "
+    "diasSiguientes diasSiguientes mapa";
+}
+
+#header {
+  grid-area: header;
+  display: grid;
+  background-color: rgb(209, 206, 206);
+  height: fit-content;
+  grid-template-columns: 3fr 2fr 1fr;
+  grid-template-areas: "presentacion buscador fecha";
+}
+
+#actual {
+  font-size: 15px;
+  border-radius: 10px;
+  grid-area: actual;
+  background-color: lightblue;
+  align-self: center;
+  width: 100%;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  align-items: center;
+}
+
+#horas-siguientes {
+  height: fit-content;
+  border-radius: 10px;
+  margin: 2rem;
+  grid-area: horasSiguientes;
+  align-self: center;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-around;
+}
+
+#dias-siguientes {
+  height: fit-content;
+  border-radius: 10px;
+  grid-area: diasSiguientes;
+  align-self: start;
+  background-color: lightskyblue;
+  width: 80%;
+  margin: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+#mapa {
+  width: 85%;
+  justify-self: center;
+  grid-area: mapa;
+  background-color: rgb(182, 233, 193);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+#interior-mapa{
+  fill: rgb(54, 241, 147);
+}
+
+#texto-mapa{
+  font-size: 25px;
+  font-weight: 700;
+}
+@media (max-width: 1210px) {
+  #main-div {
+    grid-template-areas:
+      "header header header"
+      "actual diasSiguientes diasSiguientes "
+      "horasSiguientes horasSiguientes mapa";
+  }
+
+  #horas-siguientes {
+    font-size: 12px;
+    margin: 1rem;
+    align-self: start;
+  }
+
+  #dias-siguientes {
+    align-self: center;
+    width: 95%;
+    margin: 1rem;
+  }
+  #actual {
+    font-size: 12px;
+    margin: 1rem;
+  }
+}
+@media (max-width: 950px) {
+  #main-div {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 6fr 4fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      "header header header header header"
+      "actual  actual diasSiguientes diasSiguientes diasSiguientes "
+      "horasSiguientes horasSiguientes horasSiguientes mapa mapa ";
+  }
+  #dias-siguientes {
+    font-size: 12px;
+  }
+  #nombre {
+    font-size: 20px;
+  }
+}
+@media (max-width: 850px) {
+  #dias-siguientes {
+    justify-self: end;
+    margin: 0.5rem;
+  }
+  #horas-siguientes {
+    justify-self: center;
+  }
+
+  #main-div {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 6fr 4fr 3fr;
+    grid-template-areas:
+      "header header header header header"
+      "actual  actual diasSiguientes diasSiguientes diasSiguientes "
+      "horasSiguientes horasSiguientes horasSiguientes horasSiguientes horasSiguientes"
+      "mapa mapa mapa mapa mapa";
+  }
+  #mapa {
+    width: 70%;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 752px) {
+  #actual {
+    font-size: 10px;
+  }
+  #dias-siguientes {
+    font-size: 10px;
+    width: 95%;
+    margin-right: 0.4rem;
+  }
+  #main-div {
+    grid-template-areas:
+      "header header header header header"
+      "actual  actual diasSiguientes diasSiguientes diasSiguientes "
+      "horasSiguientes horasSiguientes horasSiguientes horasSiguientes horasSiguientes"
+      "mapa mapa mapa mapa mapa";
+  }
+  #nombre {
+    font-size: 18px;
+  }
+  #horas-siguientes {
+    font-size: 10px;
+  }
+}
+@media (max-width: 625px) {
+  #main-div {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 3fr 2fr 2fr;
+    grid-gap: 0.7rem;
+    grid-template-areas:
+      "header"
+      "actual "
+      "horasSiguientes"
+      "diasSiguientes"
+      "mapa";
+  }
+  #header {
+    font-size: 12px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 55% 45%;
+    grid-template-areas:
+      "presentacion fecha"
+      "buscador buscador";
+  }
+  #actual {
+    border-radius: 0px;
+    margin: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  #horas-siguientes {
+    border-radius: 0px;
+    margin: 0rem;
+    font-size: 8px;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+  }
+  #dias-siguientes {
+    width: 100%;
+    font-size: 9px;
+    border-radius: 0px;
+    margin: 0rem;
+  }
+  #barra {
+    margin-top: 0.1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.7rem;
+    grid-area: buscador;
+    width: 70%;
+    justify-self: end;
+  }
+  #mapa {
+    width: 80%;
+    border-radius: 20px;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+  }
+  #contorno-mapa{
+    border-radius: 20px;
+    width: 50%;
+  }
+  #texto-mapa{
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+}
