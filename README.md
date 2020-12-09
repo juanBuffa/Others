@@ -1,4 +1,4 @@
-# Proyectos-personales
+# Proyectos personales
 -Página de tablas de posiciones de fútbol hecha con Spring Boot(futbolApp): https://futbol-juan-buffa.herokuapp.com/ 
 
 Detalles: creada inicialmente con Spring Initilizr, utiliza como dependencias Web, Thymeleaf, mail, y JQuery, entre otras. Permite elegir una liga de primera división para ver su  tabla de posciones. También permite ingresar a un equipo dentro de la tabla para ver más estadísticas.
