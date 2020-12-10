@@ -11,5 +11,5 @@ Nota: el botón de feedback no funciona en la página linkeada
 
 Detalles: creada inicialmente con Create React App. Permite ver el pronóstico del tiempo de una ciudad, incluyendo clima actual, horas siguientes, dias siguientes y un mapa       donde se muestra la localización de la ciudad seleccionada. 
 Tecnologías utilizadas: JavaScript, ReactJS, Bootstrap, CSS. 
-Herramientas/plataformas utilziadas para el desarrollo: Visual Studio, Create React App, Netlify.
+Herramientas/plataformas utilziadas para el desarrollo: Visual Studio Code, Create React App, Netlify.
 
