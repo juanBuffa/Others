@@ -6,7 +6,7 @@ Descripción: creada inicialmente con Spring Initilizr, utiliza como dependencia
 Tecnologías utilizadas: Java, Spring Boot (incluyendo dependencias como Web, Thymeleaf, y Mail), CSS, JQuery, Bootstrap, JS.
 Herramientas/plataformas utilizadas para el desarrollo: Netbeans, Spring Initializr, Heroku.
 
-Nota: el botón de feedback no funciona en la página linkeada
+Notas: el botón de feedback no funciona en la página linkeada. EL primer ingreso puede demorar.
 
 #### Página de pronóstico del tiempo hecha con React (código fuente en /tiempo): https://tiempo-juan-buffa.netlify.app/
 
