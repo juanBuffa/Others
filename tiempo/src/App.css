@@ -73,6 +73,7 @@
   font-size: 25px;
   font-weight: 700;
 }
+
 @media (max-width: 1210px) {
   #main-div {
     grid-template-areas:
@@ -97,6 +98,7 @@
     margin: 1rem;
   }
 }
+
 @media (max-width: 950px) {
   #main-div {
     grid-template-columns: repeat(5, 1fr);
@@ -114,6 +116,7 @@
     font-size: 20px;
   }
 }
+
 @media (max-width: 850px) {
   #dias-siguientes {
     justify-self: end;
@@ -137,6 +140,7 @@
     margin-bottom: 1rem;
   }
 }
+
 @media (max-width: 752px) {
   #actual {
     font-size: 10px;
@@ -160,6 +164,7 @@
     font-size: 10px;
   }
 }
+
 @media (max-width: 625px) {
   #main-div {
     grid-template-columns: 1fr;
