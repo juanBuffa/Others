@@ -11,7 +11,6 @@ class App extends Component {
     super(props);
     this.state = {
       ciudad: "Buenos Aires",
-      actualizando: false,
       valido: true,
       cargando: true,
       actual: {
@@ -38,8 +37,6 @@ class App extends Component {
   }
 
   async buscar() {
-    if (this.state.actualizando === false) {
-      this.setState({ actualizando: true});
       const condicionActual = await fetch(
         "https://api.openweathermap.org/data/2.5/weather?q=" +
           this.state.ciudad +
@@ -80,33 +77,17 @@ class App extends Component {
           actualizando: false,
         });
       } else {
-        this.setState({ valido: false, actualizando: false});
+        this.setState({ valido: false});
       }
-    }
   }
 
   componentDidMount() {
-    this.buscar();
+   this.buscar();
   }
 
-  componentDidUpdate() {
-    this.buscar();
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    if (
-      (this.state.ciudad !== nextState.ciudad) ||
-      (this.state.actual.ciudad !== nextState.actual.ciudad) ||
-      (this.state.futuro.ciudad !== nextState.futuro.ciudad) ||
-      (this.state.valido !== nextState.valido)
-    ) {
-      return true;
-    }
-    return false;
-  }
 
   elegir(elegida) {
-    this.setState({ ciudad: elegida });
+    this.setState({ ciudad: elegida }, this.buscar);
   }
 
   render() {
