@@ -34,9 +34,11 @@ public class ServicioMailFeedback {
 
             }
 
-        });
+        }); 
+        
         Message msg = new MimeMessage(session);
         session.setDebug(true);
+        
         try {
 
             msg.setFrom(new InternetAddress("cuentaparaprobarjava@gmail.com"));
