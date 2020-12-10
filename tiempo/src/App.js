@@ -85,12 +85,12 @@ class App extends Component {
     }
   }
 
-  async componentDidMount() {
-    await this.buscar();
+  componentDidMount() {
+    this.buscar();
   }
 
-  async componentDidUpdate() {
-    await this.buscar();
+  componentDidUpdate() {
+    this.buscar();
   }
 
   shouldComponentUpdate(nextProps, nextState) {
