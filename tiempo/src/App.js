@@ -11,6 +11,7 @@ class App extends Component {
     super(props);
     this.state = {
       ciudad: "Buenos Aires",
+      actualizando: false,
       valido: true,
       cargando: true,
       actual: {
@@ -37,6 +38,8 @@ class App extends Component {
   }
 
   async buscar() {
+    if (this.state.actualizando === false) {
+      this.setState({ actualizando: true});
       const condicionActual = await fetch(
         "https://api.openweathermap.org/data/2.5/weather?q=" +
           this.state.ciudad +
@@ -77,8 +80,9 @@ class App extends Component {
           actualizando: false,
         });
       } else {
-        this.setState({ valido: false});
+        this.setState({ valido: false, actualizando: false});
       }
+    }
   }
 
   componentDidMount() {
@@ -130,3 +134,4 @@ class App extends Component {
 }
 
 export default App;
+
