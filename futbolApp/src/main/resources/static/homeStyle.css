@@ -1,0 +1,38 @@
+button{
+    width:30rem;
+    font-size:18px;
+    height: 5rem;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: goldenrod;
+    padding: 20px;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    border-color: chartreuse;
+}
+
+#titulo{
+  font-size:24px;  
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+#BloqueDeBotones{
+    max-width:80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+@media (max-width: 600px) {
+    button{
+    font-size:15px;
+     width:20rem;   
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Tabla de Posiciones</title>
+        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"></meta>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="../standingsStyle.css"></link>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="../standingsScript.js"></script>
+        <link rel="icon" type="image/png" href="../pelota.png"></link>
+    </head>
+
+    <body>
+        <div class="jumbotron row" style="background-color: darkorange">
+            <div class="col-sm"></div>
+            <div  class="col-sm">
+                <h1 id="titulo">Posiciones de la liga</h1>
+            </div>
+            <div class="col-sm"></div>
+        </div>
+        <div class="container">
+            <table class="table table-dark">
+                <tr>
+                    <th>Posicion</th>
+                    <th>Equipo</th>
+                    <th>Puntos</th>
+                </tr>
+                <tr th:each="equipo : ${tabla}">
+                    <td th:text="${equipo.position}"></td>
+                    <td>
+                        <a th:href="@{/infoDeEquipo/{name}(name=${equipo.team.name})}" th:text="${equipo.team.name}"> </a>
+                    </td>
+                    <td th:text="${equipo.puntos}"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="divis" class="divi">
+            <form id="feedback-form"  class="activator" method="POST" th:action="@{/feedback}">
+                <textarea style="height:10rem;width:15rem;margin:0.5rem;" name="texto"></textarea>
+            </form>
+            <button type="submit" form="feedback-form">Enviar</button>
+            <button type="button" onclick="salir()">Salir</button>
+        </div>
+        <footer class="footer">
+            <div id="footer-button-div">
+                <button id="footer-button">Feedback</button>
+            </div>
+        </footer>
+    </body>
+</html>

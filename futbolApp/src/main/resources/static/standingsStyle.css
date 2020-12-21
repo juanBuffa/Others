@@ -1,0 +1,43 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+}
+button{
+    border-radius: 7px;
+    background-color: aqua;
+}
+.divi{
+    position: fixed;
+    border-radius: 7px;
+    right: 0;
+    bottom: 0;
+    height: 14rem;
+    width:20rem;
+    background-color:aquamarine;
+    visibility: hidden;
+    text-align: center;
+}
+#titulo{
+    font-size:2rem;
+    text-align: center;
+    margin:auto;
+}
+
+body{
+    font-size: 16px;
+    background-color: bisque;
+}
+
+@media (max-width: 600px) {
+body{
+    font-size: 14px;
+}
+}
+@media (max-width: 400px) {
+#titulo{
+    font-size:1.5rem;
+}
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Informacion del equipo</title>
+        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="../equipoStyle.css"></link>
+        <link rel="icon" type="image/png" href="../pelota.png"></link>
+    </head>
+
+    <body>
+        <div id="central">
+            <div class="card">
+                <div id="img-div">
+                    <img th:src="@{${equipo.team.crestUrl}}" class="card-img-top" alt="El logo de este Club no está disponible" ></img>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead >
+                            <tr >
+                                <th><p class="card-text">Equipo</p></th>
+                                <th><p class="card-text">GAN</p></th>
+                                <th><p class="card-text">EMP</p></th>
+                                <th><p class="card-text">PER</p></th>
+                                <th><p class="card-text">GF</p></th>
+                                <th><p class="card-text">GE</p></th>
+                                <th><p class="card-text">DG</p></th>
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <tr >
+                                <td><p class="card-text" th:text="${equipo.team.name}"></p></td>
+                                <td><p class="card-text" th:text="${equipo.won}"></p></td>
+                                <td><p class="card-text" th:text="${equipo.draw}"></p></td>
+                                <td><p class="card-text" th:text="${equipo.lost}"></p></td>
+                                <td><p class="card-text" th:text="${equipo.goalsFor}"></p></td>
+                                <td><p class="card-text" th:text="${equipo.goalsAgainst}"></p></td>
+                                <td><p class="card-text" th:text="${equipo.goalDifference}"></p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
