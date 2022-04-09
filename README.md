@@ -1,16 +1,16 @@
-# Otros proyectos personales
+# Other personal Projects
 
 ### futbolApp
 
-Descripción: estructura creada con Spring Initilizr, utiliza como dependencias: Web, Thymeleaf, y Mail, entre otras. Permite elegir una liga de primera división de un país para ver su tabla de posciones. También permite ingresar a un equipo en particular dentro de la tabla para ver más estadísticas. Los datos se consumen de una API externa de información de futbol.
+Description: bootstraped with Spring Initilizr, it uses Spring Web, Thymeleaf, y Mail, amongst others. It allows the user to choose a first division league in order to check its leaderboard. It also has an expanded details feature, where the user picks a particular team within the table and more statistics are shown. It consumes data from an external football API.
 
-Tecnologías utilizadas: Java, Spring Boot (incluyendo dependencias como Web, Thymeleaf, y Mail), CSS, JQuery, Bootstrap, JS.
-Herramientas/plataformas utilizadas para el desarrollo: Netbeans, Spring Initializr.
+Tecnologies used: Java, Spring Boot (including as dependecies Web, Thymeleaf, and Mail), CSS, JQuery, Bootstrap, JS.
+Tools/platforms used in the development process: Netbeans, Spring Initializr.
 
 ### tiempo
 
-Descripción: creada utilizando Create React App. Permite ver el pronóstico del tiempo de una ciudad, incluyendo clima actual, horas siguientes, dias siguientes y un mapa donde se muestra la localización de la ciudad seleccionada. Los datos se consumen de una API externa de información del tiempo.
+Description: created using Create React App. t allows the user to visualize the forecast of a given city,including current weather, following hours, following days, and a map where the location of the select city is shown. It consumes data from an external weather API.
 
-Tecnologías utilizadas: JavaScript, ReactJS, Bootstrap, CSS. 
-Herramientas/plataformas utilizadas para el desarrollo: Visual Studio Code, Create React App.
+Tecnologies used: JavaScript, ReactJS, Bootstrap, CSS. 
+Tools/platforms used in the development process: Visual Studio Code, Create React App.
 
