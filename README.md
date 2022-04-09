@@ -16,4 +16,4 @@ Tecnologies used: JavaScript, ReactJS, Bootstrap, CSS.
 
 Tools/platforms used in the development process: Visual Studio Code, Create React App.
 
-Note: the codebase is written largely in Spanish
+**Note**: the codebase is written largely in Spanish
