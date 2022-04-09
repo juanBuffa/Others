@@ -1,4 +1,4 @@
-# otros proyectos personales
+# Otros proyectos personales
 
 ### futbolApp
 
