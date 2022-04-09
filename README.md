@@ -2,9 +2,9 @@
 
 ### futbolApp
 
-Description: bootstraped with Spring Initilizr, it uses Spring Web, Thymeleaf, y Mail, amongst others. It allows the user to choose a first division league in order to check its leaderboard. It also has an expanded details feature, where the user picks a particular team within the table and more statistics are shown. It consumes data from an external football API.
+Description: bootstraped with Spring Initilizr, it uses Spring Web, Thymeleaf, and Mail, amongst others. It allows the user to choose a first division league in order to check its leaderboard. It also has an expanded details feature, where the user picks a particular team within the table and more statistics are shown. It consumes data from an external football API.
 
-Tecnologies used: Java, Spring Boot (including as dependecies Web, Thymeleaf, and Mail), CSS, JQuery, Bootstrap, JS.
+Tecnologies used: Java, Spring Boot (including Web, Thymeleaf, and Mail as dependecies), CSS, JQuery, Bootstrap, JS.
 
 Tools/platforms used in the development process: Netbeans, Spring Initializr.
 
